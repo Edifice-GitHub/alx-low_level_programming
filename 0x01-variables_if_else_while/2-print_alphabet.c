@@ -1,23 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - print 00 to 99
+ * main - Entry point
  *
- * Return: zero
+ * Return: 0
  */
 int main(void)
 {
-	int i;
+	char a = 'a';
 
-	for (i = 0; i <= 99; i++)
+	while (a <= 'z')
 	{
-		putchar((i / 10) + '0');
-		putchar((i % 10) + '0');
-		if (i == 99)
-			break;
-		putchar(',');
-		putchar(' ');
+		putchar(a);
+		a++;
 	}
+
 	putchar('\n');
 	return (0);
 }
